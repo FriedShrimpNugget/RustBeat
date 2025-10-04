@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Twemoji";
+  src: url("/components/Fonts/TweMoji.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.trapezoid1 {
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #3498db;
+  clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+  transition: all 0.3s ease-in-out;
+  border: solid 4px #70b0ff;
+}
+.trapezoid2 {
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #373737;
+  clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+  transition: all 0.3s ease-in-out;
+  border: solid 4px #878787;
+
+}
+.trapezoid1:hover,
+.trapezoid2:hover {
+  width: 305px;
+
+}
+.title {
+  font-family: "Twemoji", sans-serif;
+  color: black;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
