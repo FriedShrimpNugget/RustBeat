@@ -1,0 +1,21 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#3a1f0b" stroke="#8b2500" stroke-width="4"></circle>
+
+  <!-- Rust texture pattern -->
+  <defs>
+    <pattern id="rustPattern" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="#b7410e"></rect>
+      <circle cx="5" cy="5" r="3" fill="#8b2500"></circle>
+      <circle cx="15" cy="15" r="2" fill="#cd6600"></circle>
+      <circle cx="12" cy="6" r="2" fill="#a0522d"></circle>
+    </pattern>
+  </defs>
+
+  <!-- Arrow shape -->
+  <polygon points="64,20 94,70 74,70 74,110 54,110 54,70 34,70" fill="url(#rustPattern)" stroke="#4b2e0f" stroke-width="4"></polygon>
+
+  <!-- Highlight lines for metallic shine -->
+  <line x1="64" y1="25" x2="64" y2="105" stroke="rgba(255,255,255,0.2)" stroke-width="2"></line>
+  <line x1="60" y1="30" x2="68" y2="100" stroke="rgba(255,255,255,0.1)" stroke-width="2"></line>
+</svg>
