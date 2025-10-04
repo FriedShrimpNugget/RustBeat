@@ -1,0 +1,65 @@
+/* Start.module.css */
+
+.window {
+  width: 50%;
+  min-height: 200px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.windowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: grab;
+  user-select: none;
+}
+
+.windowTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+}
+
+.windowButtons {
+  display: flex;
+  gap: 6px;
+}
+
+.windowButtons::after {
+  content: "✕";
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  background-color: red;
+  
+}
+
+.windowButtons::after:hover {
+  background-color: red;
+}
+
+.windowContent {
+  padding: 16px;
+  color: #111;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.window:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+}

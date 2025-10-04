@@ -1,4 +1,4 @@
-import style from "./Styles/Start.module.css";
+import style from "./Styles/Window.module.css";
 type Utils = {
   title: string;
   content: React.ReactNode;
@@ -10,7 +10,7 @@ function Window({ title, content, id, display }: Utils) {
     <div className={style.window} id={id} style={{ display }}>
       <div className={style.windowHeader}>
         <div className={style.windowTitle}>{title}</div>
-        <div className={style.windowButtons}>X</div>
+        <div className={style.windowButtons}></div>
       </div>
       <div className={style.windowContent}>{content}</div>
     </div>
