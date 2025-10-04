@@ -12,7 +12,7 @@ function App() {
   }, []);
   return (
     <>
-      <Window title="Play" id="win1" display="block" content={content1}/>
+      <Window title="Play" id="win1" content={content1}/>
       
       <Start/>
     </>

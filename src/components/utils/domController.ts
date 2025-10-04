@@ -25,8 +25,11 @@ export function removeClass(id: string, className: string) {
   el.classList.remove(className);
 }
 
-// attach click
 export function onClick(id: string, handler: () => void) {
   const el = getById<HTMLElement>(id);
   el.addEventListener("click", handler);
+}
+export function onMouseDown(id: string, handler: (event: MouseEvent) => void) {
+  const el = getById<HTMLElement>(id);
+  el.addEventListener("mousedown", handler);
 }

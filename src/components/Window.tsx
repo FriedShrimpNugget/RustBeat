@@ -1,13 +1,14 @@
 import style from "./Styles/Window.module.css";
-type Utils = {
+
+type WindowProps = {
   title: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
   id: string;
-  display: "none" | "block";
 };
-function Window({ title, content, id, display }: Utils) {
+
+function Window({ title, content, id }: WindowProps) {
   return (
-    <div className={style.window} id={id} style={{ display }}>
+    <div className={`${style.window} hidden`} id={id}>
       <div className={style.windowHeader}>
         <div className={style.windowTitle}>{title}</div>
         <div className={style.windowButtons}></div>
@@ -16,4 +17,5 @@ function Window({ title, content, id, display }: Utils) {
     </div>
   );
 }
+
 export default Window;
