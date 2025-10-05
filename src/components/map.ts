@@ -1,4 +1,3 @@
-// example map file, could be called Map.ts
 export type Arrow = "left" | "up" | "down" | "right";
 
 interface Note {

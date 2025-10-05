@@ -1,6 +1,6 @@
 import "./App.css";
 import Start from "./components/Start.tsx";
-import { content1 } from './components/Play';
+import { content1 , PlayingNotes} from './components/Play';
 import Window from "./components/Window";
 import { initDOM } from "./Manipulator";
 import { useEffect } from "react";
@@ -12,7 +12,7 @@ function App() {
   }, []);
   return (
     <>
-      <Window title="Play" id="win1" content={content1}/>
+      <Window title="Play" id="win1" content={PlayingNotes}/>
       
       <Start/>
     </>

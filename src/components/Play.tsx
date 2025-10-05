@@ -1,18 +1,19 @@
 import React from "react";
 import Song from "./Song";
-export let Playing: React.ReactNode = (
-  <div>
-    <div id="left">
-      <img src="../assets/Arrow.svg" />
+import style from "./Styles/Play.module.css"
+export let PlayingNotes: React.ReactNode = (
+  <div className={style.play}>
+    <div id="left" >
+      <img src="./assets/Arrow.svg" />
     </div>
     <div id="up">
-      <img src="../assets/Arrow.svg" />
+      <img src="./assets/Arrow.svg" />
     </div>
     <div id="down">
-      <img src="../assets/Arrow.svg" />
+      <img src="./assets/Arrow.svg" />
     </div>
     <div id="right">
-      <img src="../assets/Arrow.svg" />
+      <img src="./assets/Arrow.svg" />
     </div>
   </div>
 );
