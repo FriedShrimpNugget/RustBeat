@@ -12,8 +12,8 @@ function App() {
   }, []);
   return (
     <>
-      <Window title="Play" id="win1" content={PlayingNotes}/>
-      
+      <Window title="Play" id="win1" content={content1}/>
+      <Window title="Playthrough" id="win3" content={PlayingNotes} styles={{height: "90vh"}} />
       <Start/>
     </>
   )

@@ -1,19 +1,20 @@
 import React from "react";
 import Song from "./Song";
 import style from "./Styles/Play.module.css"
-export let PlayingNotes: React.ReactNode = (
+import ArrowH from "../assets/ArrowHollow.svg";
+export const PlayingNotes: React.ReactNode = (
   <div className={style.play}>
     <div id="left" >
-      <img src="./assets/Arrow.svg" />
+      <img src={ArrowH} style={{transform: "rotate(-90deg)"}} />
     </div>
     <div id="up">
-      <img src="./assets/Arrow.svg" />
+      <img src={ArrowH} style={{transform: "rotate(0deg)"}}/>
     </div>
     <div id="down">
-      <img src="./assets/Arrow.svg" />
+      <img src={ArrowH} style={{transform: "rotate(180deg)"}}/>
     </div>
     <div id="right">
-      <img src="./assets/Arrow.svg" />
+      <img src={ArrowH} style={{transform: "rotate(90deg)"}}/>
     </div>
   </div>
 );
