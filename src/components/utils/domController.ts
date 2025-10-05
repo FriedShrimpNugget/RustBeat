@@ -33,3 +33,10 @@ export function onMouseDown(id: string, handler: (event: MouseEvent) => void) {
   const el = getById<HTMLElement>(id);
   el.addEventListener("mousedown", handler);
 }
+export function onKeyDown(
+  id: string,
+  handler: (event: KeyboardEvent) => void
+) {
+  const el = getById<HTMLElement>(id);
+  el.addEventListener("keydown", handler);
+}
